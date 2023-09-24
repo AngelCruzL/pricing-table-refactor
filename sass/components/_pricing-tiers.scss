@@ -2,23 +2,16 @@
 
 .pricing-plans {
   display: flex;
-  border: $size-8 solid $color-primary-400;
+  border: size(8) solid clr(primary, 400);
 }
 
 .tier {
   flex: 1;
   display: grid;
-  gap: $size-20;
-  padding: $size-36;
+  gap: size(20);
 
   &__title {
-    color: $color-primary-400;
-    font-weight: $fw-700;
     text-transform: uppercase;
-
-    .inverted & {
-      color: $color-neutral-100;
-    }
   }
 
   &__feature-list {
@@ -29,20 +22,10 @@
     &:not(:last-child)::after {
       content: '';
       display: block;
-      margin-block: $size-20;
+      margin-block: size(20);
       block-size: 1px;
-      background-color: $color-neutral-900;
+      background-color: clr(neutral, 900);
       opacity: 0.2;
-    }
-  }
-
-  &__price {
-    font-size: $fs-800;
-    font-weight: $fw-700;
-
-    span {
-      font-size: $fs-600;
-      font-weight: $fw-400;
     }
   }
 }
