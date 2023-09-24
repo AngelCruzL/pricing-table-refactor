@@ -1,0 +1,14 @@
+body {
+  background-color: $color-neutral-100;
+  color: $color-neutral-900;
+  font-family: $ff-sans;
+  font-size: $fs-400;
+  font-weight: $fw-400;
+  text-align: center;
+}
+
+#page-heading {
+  margin-block: $size-32;
+  color: $color-primary-400;
+  font-size: $fs-900;
+}
